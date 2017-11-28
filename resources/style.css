@@ -1,39 +1,44 @@
 html {
   font-family: Helvetica;
   font-size: 18px;
-  margin: 0;
   }
 
+.container {
+  max-width: 960px;
+}
   /* Header */
 header {
-  display: flex;
   background-color: black;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  padding: 0.66rem 0.66rem 0.5rem;
+}
+header img {
+  height: 1.5rem;
+  padding-right: 1rem;
   align-items: center;
 }
-header .img {
-  flex-grow: 1;
-  height: 1.5rem;
-  margin-right: 1rem;
-}
 span {
-  text-align: left;
   font-size: 1rem;
-  margin-top: 0.66rem;
-  margin-bottom: 0.66rem;
-  margin-left: 0.5rem;
   color: white;
 }
 
 /* Landing Page*/
 .landing-page {
+  display: flex;
   justify-content: center;
-  background-image: url(/resources/images/moto.jpeg);
   width: 100%;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-image: url(resources/images/moto.jpeg);
 }
+
 .moto {
   justify-content: left;
   text-align: left;
-  padding-left: 100px;
   background-color: black;
 }
 .links {
