@@ -1,10 +1,12 @@
-html {
+html,
+body {
   font-family: Helvetica;
   font-size: 18px;
   }
 
 .container {
   max-width: 960px;
+  margin: 0 auto;
 }
   /* Header */
 header {
@@ -13,58 +15,114 @@ header {
 header .container {
   display: flex;
   align-items: center;
-  padding: 0.66rem 0.66rem 0.5rem;
+  padding: 0.66em 0.66em 0.5em;
 }
 header img {
-  height: 1.5rem;
-  padding-right: 1rem;
+  height: 1.5em;
+  padding-right: 1em;
   align-items: center;
 }
-span {
-  font-size: 1rem;
+.container span {
+  font-size: 1em;
   color: white;
+  font-family: helvetica;
 }
 
 /* Landing Page*/
 .landing-page {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-size: cover;
+  display: block;
   background-position: center;
-  color: white;
-  background-image: url(resources/images/moto.jpeg);
+  background-size: cover;
+  background-image: url(images/moto.jpeg);
+  height: 25em;
 }
 
 .moto {
-  justify-content: left;
-  text-align: left;
   background-color: black;
+  width: 20em;
+  padding: 2em 3em;
+  position: relative;
+  font-family: helvetica;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  top: 9em;
+}
+.moto h4 {
+  font-weight: bold;
+  margin-bottom: .25em;
+}
+.moto h2 {
+  font-size: 2em;
+  font-weight: bold;
 }
 .links {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
   flex-grow: 1;
-  background-color: red;
-}
-a {
-  padding: 10px 30px;
-  color: white
+  background-color: firebrick;
+  padding: 0.75rem 0;
+  font-family: helvetica;
+  }
+.links a {
+  color: white;
 }
 
 /* Featured Products*/
-.featured-products {
+#product {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0;
+  }
+.products {
+  border: 4px solid black;
+  width: 30%;
   justify-content: center;
   align-items: center;
-}
+  }
+  .product-image img {
+    height: 9em;
+    margin: 2em 0;
+  }
+.description {
+  background-color: black;
+  color: white;
+  padding: 0.5em 0;
+  text-align: center;
+  border: 4px solid black;
+  }
 
-.product {
-  border: 2px solid black;
-  height: 200px;
-  width: 200px
+  /* Business-Info */
+#business-info {
+  display: flex;
+  justify-content: center;
+  margin: 3em 0 4em 0;
+  }
+.business-info {
+  width: 35%;
+  align-items: center;
+  }
+.location,
+.hours h4 {
+  background-color: black;
+  color: white;
+  font-family: helvetica;
+  }
+.location,
+.hours h3 {
+  font-family: helvetica;
 }
-
+.location,
+.hours {
+  display: block;
+  padding: 1em 2em;
+}
 /* Footer*/
 footer {
   background-color: black;
-  font-color: white;
+  color: white;
+  height: 5em;
+  align-content: center;
+  justify-content: left;
 }
