@@ -1,3 +1,5 @@
+
+
 body {
   font-family: Helvetica;
   font-size: 18px;
@@ -25,7 +27,6 @@ header img {
   font-size: 1rem;
   color: white;
   }
-
 /* Landing Page*/
 .landing-page {
   display: block;
@@ -34,7 +35,6 @@ header img {
   background-image: url(images/moto.jpeg);
   height: 25rem;
 }
-
 .moto {
   background-color: black;
   width: 20rem;
@@ -60,7 +60,6 @@ header img {
   display: flex;
   justify-content: space-between;
   }
-
 .links a {
   display: inline-block;
   color: white;
@@ -100,7 +99,6 @@ header img {
   height: auto;
   margin: auto;
   }
-
   /* Business-Info */
 #business-info .container{
   display: flex;
@@ -125,7 +123,6 @@ header img {
   height: auto;
   margin: auto;
 }
-
 /* Footer*/
 footer {
   background-color: black;
@@ -135,9 +132,7 @@ footer {
 footer h3 {
   padding-top: 2.5rem;
 }
-
 /* Media rulesset for 471-1024*/
-
 @media only screen and (max-width: 1024px) {
   nav ul {
     display: none;
@@ -149,16 +144,7 @@ footer h3 {
   .product-image {
     width: 47%;
   }
-  .product-image .glasses {
+  .product-image.glasses {
     display: none;
-  }
-}
-
-@media only screen and (max-width: 470px) {
-  .container {
-    max-width: 470px;
-  }
-  .landing-page {
-    height: 15rem;
   }
 }
