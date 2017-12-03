@@ -1,8 +1,8 @@
 body {
   font-family: Helvetica;
   font-size: 18px;
+  color: white;
   }
-
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -62,12 +62,13 @@ header img {
   }
 
 .links a {
-    display: inline-block;
-    color: white;
-    padding: 0.75rem 0;
-    z-index: 1;
+  display: inline-block;
+  color: white;
+  padding: 0.75rem 0;
   }
-
+.mobile-dropdown li {
+  display: none;
+}
 /* Featured Products*/
 #product .container {
   display: flex;
@@ -101,38 +102,28 @@ header img {
   }
 
   /* Business-Info */
-.business-info {
+#business-info .container{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-content: center;
   padding: 3rem 0 4rem 0;
   margin: auto;
   }
 .business-blocks {
+  height: auto;
   width: 35%;
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-content: space-between;
   }
-.location h4 {
+.business-blocks h4 {
+  display: block;
   background-color: black;
   color: white;
   padding: 1rem 2rem;
-  text-align: left;
   }
-.hours h4 {
-  background-color: black;
-  color: white;
-  padding: 1rem 2rem;
-  text-align: left;
-  }
-.location span {
+.business-blocks span {
   width: 100%;
   color: black;
-}
-.hours span {
-  width: 100%;
-  color: black;
+  height: auto;
+  margin: auto;
 }
 
 /* Footer*/
@@ -140,6 +131,33 @@ footer {
   background-color: black;
   color: white;
   height: 5rem;
-  align-content: center;
-  justify-content: left;
+}
+footer h3 {
+  padding-top: 2.5rem;
+}
+
+/* Media rulesset for 471-1024*/
+
+@media only screen and (max-width: 1024px)
+{
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .desktop-dropdown {
+    display: none;
+  }
+  .mobile-dropdown {
+    display: block;
+    text-align: center;
+  }
+  .product-image {
+    width: 47%;
+  }
+  .business-blocks {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+  }
 }
