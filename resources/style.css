@@ -148,3 +148,46 @@ footer h3 {
     display: none;
   }
 }
+
+/* Media rulesset for 471-1024*/
+@media only screen and (max-width: 470px) {
+  .landing-page {
+    height: 15rem;
+    }
+  .moto {
+    padding: 1rem 2rem;
+    top: 10rem;
+    }
+  .moto h4 {
+    font-size: 0.77rem;
+  }
+  .moto h2 {
+    font-size: 1rem;
+  }
+  .desktop-dropdown li {
+    display: none;
+  }
+  .mobile-dropdown li {
+    display: block;
+    text-align: center;
+  }
+  .product-image.watch,
+  .product-image.glasses {
+    display: none;
+  }
+  .product-image {
+    width: 90%;
+    margin: auto;
+  }
+  #business-info .container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .business-blocks {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+  footer {
+    text-align: center;
+  }
+}
